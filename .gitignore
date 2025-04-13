@@ -1,4 +1,7 @@
-node_modules/
-.env
-.env.* 
-# .gitignore file to ignore unnecessary files and directories
+# Root-level .gitignore
+
+# Ignore node_modules and .env in both folders
+client/node_modules/
+server/node_modules/
+client/.env
+server/.env
