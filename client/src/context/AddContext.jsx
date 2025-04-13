@@ -11,7 +11,7 @@ export const AppContextProvider = (props)=>{
 
     const navigate = useNavigate();
     const {getToken} = useAuth();
-    const {user} = useUser();
+    // const {user} = useUser();
 
     const [allCourses, setAllCourses] = useState([])
     const [isEducator, setIsEducator] = useState(true)
@@ -66,15 +66,15 @@ export const AppContextProvider = (props)=>{
         getchUserEnrolledCourses()
     },[])
 
-    const logToken = async()=>{
-        console.log(await getToken());
+    // const logToken = async()=>{
+    //     console.log(await getToken());
         
-    }
-    useEffect(()=>{
-        if (user){
-            logToken()
-        }
-    },[user])
+    // }
+    // useEffect(()=>{
+    //     if (user){
+    //         logToken()
+    //     }
+    // },[user])
 
     const value = {
         currency, allCourses,navigate, calculateRating, isEducator, setIsEducator, calculateChapterTime,calculateCourseDuration, calculateNoOfLectures, enrolledCourses, getchUserEnrolledCourses
