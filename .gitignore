@@ -1,0 +1,4 @@
+node_modules/
+.env
+.env.* 
+# .gitignore file to ignore unnecessary files and directories
